@@ -6,6 +6,13 @@
     </head>
     <body>
         <div class="section" id="splash">
+            {{ if .Site.Params.topImage }}
+                <div class="profile">
+                    <img src="{{.Site.Params.topImage}}" class="avater"/>
+                </div>
+            {{ end }}
+
+
 
             {{ if .Site.Params.mainMenu }}
                 {{ range .Site.Params.mainMenu }}
